@@ -1,0 +1,47 @@
+# main text of home
+name: Kinyanjui Wangonya
+bio: Javascript coder, web, and mobile app developer.
+
+# twitter summary info
+description: Kinyanjui Wangonya is a talented Javascript coder, web, and mobile app developer. Find more about him here.
+
+# if it's an external image, update below for true
+# better with square images
+external-image: false
+picture: assets/images/me.jpg
+
+# If you want to include your resume, set to true
+# and specify source (external or local).
+#resume: false
+#resume-external: true
+#resume-url: https://drive.google.com/file/d/1E8-w9lOBE8Ef4mACMdcHb0XUFuHT3JKa/view?usp=sharing
+
+url: https://wang0nya.github.io/
+# your url: http://USERNAME.github.io
+
+permalink: /:title/
+
+# To enable google analytics, supply your token below
+# analytics-google: 'UA-MYANALYTICS'
+
+# if you don't have any of social below, comment the line
+github: wang0nya
+email: kwangonya@gmail.com
+
+# do you want a larger site? change the option below
+# options: [normal, large] | default: normal
+# normal = 560px / large = 810px
+width: normal
+
+# do you want some animations?
+animation: true
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-admin
+
+jekyll-mentions:
+    base_url: https://github.com
