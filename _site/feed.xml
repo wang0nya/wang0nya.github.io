@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kinyanjui Wangonya</title>
-    <description>Kinyanjui Wangonya's blog and portfolio</description>
+    <description>Kinyanjui Wangonya ia a javascript coder, web, and mobile app developer. Here's his blog and portfolio</description>
     <link>http://localhost:4000</link>
     
       
         <item>
           <title>Taking advantage of conventions in web design</title>
-          <description>&lt;p&gt;I was recently pointed me to a very interesting principle I hadn’t come across before: &lt;a href=&quot;https://en.m.wikipedia.org/wiki/Principle_of_least_astonishment&quot;&gt;The principle of least astonishment&lt;/a&gt;. Basically, what the principle states is that “If a necessary feature has a high astonishment factor, &lt;em&gt;(astonishment factor here being an element of surprise)&lt;/em&gt;, it may be necessary to redesign the feature. People are part of the system. The design should match the user’s experience, expectations, and mental models.”&lt;/p&gt;
+          <description>&lt;p&gt;I was recently pointed to a very interesting principle I hadn’t come across before: &lt;a href=&quot;https://en.m.wikipedia.org/wiki/Principle_of_least_astonishment&quot;&gt;The principle of least astonishment&lt;/a&gt;. Basically, what the principle states is that “If a necessary feature has a high astonishment factor, &lt;em&gt;(astonishment factor here being an element of surprise)&lt;/em&gt;, it may be necessary to redesign the feature. People are part of the system. The design should match the user’s experience, expectations, and mental models.”&lt;/p&gt;
 
 &lt;p&gt;Though it isn’t mentioned in &lt;a href=&quot;https://www.amazon.com/Dont-Make-Think-Revisited-Usability/dp/0321965515/ref=pd_lpo_sbs_14_t_0?_encoding=UTF8&amp;amp;psc=1&amp;amp;refRID=2RQ8KQECKSST8TY6A745&amp;amp;dpID=51pnouuPO5L&amp;amp;preST=_SX218_BO1,204,203,200_QL40_&amp;amp;dpSrc=detail&quot;&gt;the book&lt;/a&gt;, I think that principle really fits this section well. When people use your app, they expect stuff to be at certain places. Just imagine what your reaction would have been like the first time you logged in to dev.to if you found the DEV logo on the right side of the navbar. Or if the search-bar was somewhere in the footer. Coming from somewhat similar websites that existed before dev.to, we expected it to feel similar to what we were already accustomed to. That’s why no one needs a tutorial on how to navigate the site.&lt;/p&gt;
 

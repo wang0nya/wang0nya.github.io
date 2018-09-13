@@ -2,96 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac5ee85d-37a6-4198-9333-d953d5c98a51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_posts/2018-08-30-lookaheads-lookbehinds.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_posts/2018-09-09-first-law-of-usability.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_posts/2018-09-10-how-we-use-web.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_posts/2018-09-12-web-conventions.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rakefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config-dev.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/favicon.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/icons.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/nav.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/social-links.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/style.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/compress.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/compress.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/default.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/page.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/base/general.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/base/helpers.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/base/normalize.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/base/syntax.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/base/variables.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/components/footer.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/components/header.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/components/nav.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/components/others.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/components/side-by-side.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/components/social-links.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/components/spoiler.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/pages/home-blog-projects.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/pages/page.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/pages/post.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/pages/tags.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/Rakefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/favicon/apple-touch-icon-114x114.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/favicon/apple-touch-icon-120x120.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/favicon/apple-touch-icon-144x144.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/favicon/apple-touch-icon-152x152.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/favicon/apple-touch-icon-57x57.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/favicon/apple-touch-icon-60x60.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/favicon/apple-touch-icon-72x72.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/favicon/apple-touch-icon-76x76.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/favicon/code.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/favicon/favicon-128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/favicon/favicon-16x16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/favicon/favicon-196x196.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/favicon/favicon-32x32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/favicon/favicon-96x96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/favicon/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/favicon/mstile-144x144.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/favicon/mstile-150x150.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/favicon/mstile-310x150.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/favicon/mstile-310x310.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/favicon/mstile-70x70.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/assets/images/me.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_site/feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_site/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_site/robots.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_site/travis.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/favicon/apple-touch-icon-114x114.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/favicon/apple-touch-icon-120x120.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/favicon/apple-touch-icon-144x144.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/favicon/apple-touch-icon-152x152.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/favicon/apple-touch-icon-57x57.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/favicon/apple-touch-icon-60x60.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/favicon/apple-touch-icon-72x72.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/favicon/apple-touch-icon-76x76.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/favicon/code.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/favicon/favicon-128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/favicon/favicon-16x16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/favicon/favicon-196x196.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/favicon/favicon-32x32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/favicon/favicon-96x96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/favicon/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/favicon/mstile-144x144.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/favicon/mstile-150x150.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/favicon/mstile-310x150.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/favicon/mstile-310x310.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/favicon/mstile-70x70.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/images/me.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/robots.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travis.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.md" beforeDir="false" afterPath="$PROJECT_DIR$/about.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -122,7 +34,7 @@
           <entry key="css" value="2" />
           <entry key="gemspec" value="1" />
           <entry key="html" value="8" />
-          <entry key="md" value="11" />
+          <entry key="md" value="12" />
           <entry key="png" value="2" />
           <entry key="scss" value="4" />
           <entry key="sh" value="1" />
@@ -136,7 +48,7 @@
           <entry key="CSS" value="2" />
           <entry key="HTML" value="8" />
           <entry key="Image" value="2" />
-          <entry key="Markdown" value="11" />
+          <entry key="Markdown" value="12" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="SCSS" value="4" />
           <entry key="YAML" value="1" />
@@ -146,7 +58,7 @@
         <counts>
           <entry key="css" value="36" />
           <entry key="html" value="464" />
-          <entry key="md" value="378" />
+          <entry key="md" value="418" />
           <entry key="yml" value="199" />
         </counts>
       </usages-collector>
@@ -154,7 +66,7 @@
         <counts>
           <entry key="CSS" value="36" />
           <entry key="HTML" value="464" />
-          <entry key="Markdown" value="378" />
+          <entry key="Markdown" value="418" />
           <entry key="YAML" value="199" />
         </counts>
       </usages-collector>
@@ -162,7 +74,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
@@ -171,12 +83,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/about.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="105">
-                <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="76" />
+              <first_editor relative-caret-position="165">
+                <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
               </first_editor>
               <second_editor />
             </state>
@@ -242,10 +154,10 @@
         <option value="$PROJECT_DIR$/_posts/2018-08-30-lookaheads-lookbehinds.md" />
         <option value="$PROJECT_DIR$/_posts/2018-09-09-first-law-of-usability.md" />
         <option value="$PROJECT_DIR$/_posts/2018-09-10-how-we-use-web.md" />
-        <option value="$PROJECT_DIR$/_posts/2018-09-12-web-conventions.md" />
-        <option value="$PROJECT_DIR$/about.md" />
         <option value="$PROJECT_DIR$/_includes/header.html" />
         <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/_posts/2018-09-12-web-conventions.md" />
+        <option value="$PROJECT_DIR$/about.md" />
       </list>
     </option>
   </component>
@@ -347,15 +259,16 @@
       <workItem from="1536633338053" duration="445000" />
       <workItem from="1536650999512" duration="55000" />
       <workItem from="1536730020874" duration="739000" />
-      <workItem from="1536817047323" duration="3521000" />
+      <workItem from="1536817047323" duration="3815000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8850000" />
+    <option name="totallyTimeSpent" value="9144000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15164521" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -513,16 +426,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2018-09-12-web-conventions.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="15">
-            <caret line="1" column="47" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/core.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -551,11 +454,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/about.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2018-09-12-web-conventions.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="105">
-            <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="76" />
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
           </first_editor>
           <second_editor />
         </state>
@@ -565,6 +468,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="105" selection-start-line="2" selection-start-column="105" selection-end-line="2" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/about.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="165">
+            <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
