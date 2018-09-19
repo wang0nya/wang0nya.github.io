@@ -6,53 +6,33 @@ title: Portfolio
 		<div class="container">
 			<div class="row">
 			    <div class="work-box">
-				<a href="#" title="Project 1" class="work-item" target="_blank">
-			      <div class="work-item-content">
-			      	<div class="work-item-image" style="background-image: url('https://via.placeholder.com/350x150');"></div>
-			      	<div class="work-item-text">
-			      		<h4 class="work-item-title">Project 1</h4>
-			      		<p>Coming Soon</p>
-			      	</div>  	
-			      	&rarr;
-			      	<div class="circle"></div>
-			      </div>
-			    </a>
 
-			    <a href="#" title="Project 2" class="work-item" target="_blank">
+			    <a href="https://camperproject.herokuapp.com/welcome" title="Camper" class="work-item" target="_blank">
 			      <div class="work-item-content">
-			      	<div class="work-item-image" style="background-image: url('https://via.placeholder.com/350x150');"></div>
+			      	<div class="work-item-image" style="background-image: url('assets/camper.png');"></div>
 			      	<div class="work-item-text">
-			      		<h4 class="work-item-title">Project 2</h4>
-			      		<p>Coming Soon</p>
+			      		<h4 class="work-item-title">Camper</h4>
+			      		<p>YelpCamp clone</p>
+			      		<small><span class="angular"></span> ANGULAR</small>
 			      	</div>
 			      	&rarr;
 			      	<div class="circle"></div>
 			      </div>
 			    </a>
 
-			    <a href="#" title="Project 3" class="work-item" target="_blank">
+			    <a href="https://wang0nya.github.io/cars-n-chrome/" title="Cars & Chrome" class="work-item" target="_blank">
 			      <div class="work-item-content">
-			      	<div class="work-item-image" style="background-image: url('https://via.placeholder.com/350x150');"></div>
+			      	<div class="work-item-image" style="background-image: url('assets/cnc.png');"></div>
 			      	<div class="work-item-text">
-			      		<h4 class="work-item-title">Project 3</h4>
-			      		<p>Coming Soon</p>
+			      		<h4 class="work-item-title">Cars & Chrome</h4>
+			      		<p>Cars & Chrome Club Kenya website</p>
+			      		<small><span class="html"></span> HTML 5</small>
 			      	</div>
 			      	&rarr;
 			      	<div class="circle"></div>
 			      </div>
 			    </a>
 			    
-			    <a href="#" title="Project 4" class="work-item" target="_blank">
-                			      <div class="work-item-content">
-                			      	<div class="work-item-image" style="background-image: url('https://via.placeholder.com/350x150');"></div>
-                			      	<div class="work-item-text">
-                			      		<h4 class="work-item-title">Project 4</h4>
-                			      		<p>Coming Soon</p>
-                			      	</div>
-                			      	&rarr;
-                			      	<div class="circle"></div>
-                			      </div>
-                			    </a>
 		    </div>
 	    </div>
     </div>
