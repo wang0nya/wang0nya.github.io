@@ -33,6 +33,20 @@ Here are a few ways you could make your logs a bit more visually informative, an
 ```
 ![warninglog](https://thepracticaldev.s3.amazonaws.com/i/5d5je9x3d5kex8y7kosz.png)
 
+### Use `console.table()` for iterable objects
+```javascript
+function Person(firstName, lastName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+}
+
+const me = new Person('John', 'Smith');
+
+console.table(me);
+```
+![tablelog](https://thepracticaldev.s3.amazonaws.com/i/smtigum4notzzl2gjrnq.png)
+
+
 ### Add your custom styles
 ```javascript
 (() => {
