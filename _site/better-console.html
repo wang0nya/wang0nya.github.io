@@ -11,13 +11,13 @@
     <span class="nx">console</span><span class="p">.</span><span class="nx">warn</span><span class="p">(</span><span class="s1">'Warning! Something doesnt seem right.'</span><span class="p">)</span>
 <span class="p">})()</span>
 </code></pre></div></div> <p><img src="https://thepracticaldev.s3.amazonaws.com/i/5d5je9x3d5kex8y7kosz.png" alt="warninglog" /></p> <h3 id="use-consoletable-for-iterable-objects">Use <code class="highlighter-rouge">console.table()</code> for iterable objects</h3> <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Person</span><span class="p">(</span><span class="nx">firstName</span><span class="p">,</span> <span class="nx">lastName</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">this</span><span class="p">.</span><span class="nx">firstName</span> <span class="o">=</span> <span class="nx">firstName</span><span class="p">;</span>
-  <span class="k">this</span><span class="p">.</span><span class="nx">lastName</span> <span class="o">=</span> <span class="nx">lastName</span><span class="p">;</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">firstName</span> <span class="o">=</span> <span class="nx">firstName</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">lastName</span> <span class="o">=</span> <span class="nx">lastName</span>
 <span class="p">}</span>
 
-<span class="kd">const</span> <span class="nx">me</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s1">'John'</span><span class="p">,</span> <span class="s1">'Smith'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">me</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="s1">'John'</span><span class="p">,</span> <span class="s1">'Smith'</span><span class="p">)</span>
 
-<span class="nx">console</span><span class="p">.</span><span class="nx">table</span><span class="p">(</span><span class="nx">me</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">table</span><span class="p">(</span><span class="nx">me</span><span class="p">)</span>
 </code></pre></div></div> <p><img src="https://thepracticaldev.s3.amazonaws.com/i/smtigum4notzzl2gjrnq.png" alt="tablelog" /></p> <h3 id="add-your-custom-styles">Add your custom styles</h3> <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="c1">// do stuff</span>
     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'%c%s'</span><span class="p">,</span>

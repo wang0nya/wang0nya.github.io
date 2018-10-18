@@ -36,13 +36,13 @@ Here are a few ways you could make your logs a bit more visually informative, an
 ### Use `console.table()` for iterable objects
 ```javascript
 function Person(firstName, lastName) {
-  this.firstName = firstName;
-  this.lastName = lastName;
+  this.firstName = firstName
+  this.lastName = lastName
 }
 
-const me = new Person('John', 'Smith');
+const me = new Person('John', 'Smith')
 
-console.table(me);
+console.table(me)
 ```
 ![tablelog](https://thepracticaldev.s3.amazonaws.com/i/smtigum4notzzl2gjrnq.png)
 
