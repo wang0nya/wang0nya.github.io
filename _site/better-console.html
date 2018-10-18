@@ -1,0 +1,44 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1" /> <title>Better console.logs · Kinyanjui Wangonya</title> <meta name="description" content="If you work with javascript a lot, you probably often need to use console.log() to output some info as you go along."> <link rel="icon" href="http://localhost:4000/assets/favicon.png"> <link rel="apple-touch-icon" href="http://localhost:4000/assets/touch-icon.png"> <link rel="stylesheet" href="http://localhost:4000/assets/core.css"> <link rel="canonical" href="http://localhost:4000/better-console"> <link rel="alternate" type="application/atom+xml" title="Kinyanjui Wangonya" href="http://localhost:4000/feed.xml" /> </head> <body> <aside class="logo"> <a href="http://localhost:4000/"> <img src="/assets/me.jpg" class="logo-avatar" alt="logo"> </a> <span class="logo-prompt code">Back home</span> </aside> <div id="content"> <article> <div class="center"> <h1 class="title">Better console.logs</h1> <time class="code">October 18, 2018</time> </div> <div class="divider"></div> <p>If you work with javascript a lot, you probably often need to use <code class="highlighter-rouge">console.log()</code> to output some info as you go along.</p> <p>It’s usually just the plain old way though:</p> <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// do stuff</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Success!'</span><span class="p">)</span>
+<span class="p">})()</span>
+</code></pre></div></div> <p><img src="https://thepracticaldev.s3.amazonaws.com/i/7c9pbcb63avm83drprur.png" alt="plain" /></p> <p>Here are a few ways you could make your logs a bit more visually informative, and interesting 🙂</p> <h3 id="use-consoleerror-for-error-logs">Use <code class="highlighter-rouge">console.error()</code> for error logs</h3> <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// do stuff</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="s1">'Oops, something went wrong!'</span><span class="p">)</span>
+<span class="p">})()</span>
+</code></pre></div></div> <p><img src="https://thepracticaldev.s3.amazonaws.com/i/d2sjc7fbnab0ihih2718.png" alt="errorlog" /></p> <h3 id="use-consolewarn-for-warning-logs">Use <code class="highlighter-rouge">console.warn()</code> for warning logs</h3> <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// do stuff</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">warn</span><span class="p">(</span><span class="s1">'Warning! Something doesnt seem right.'</span><span class="p">)</span>
+<span class="p">})()</span>
+</code></pre></div></div> <p><img src="https://thepracticaldev.s3.amazonaws.com/i/5d5je9x3d5kex8y7kosz.png" alt="warninglog" /></p> <h3 id="add-your-custom-styles">Add your custom styles</h3> <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// do stuff</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'%c%s'</span><span class="p">,</span>
+            <span class="s1">'color: green; background: yellow; font-size: 24px;'</span><span class="p">,</span><span class="s1">'Success!'</span><span class="p">)</span>
+<span class="p">})()</span>
+</code></pre></div></div> <p><img src="https://thepracticaldev.s3.amazonaws.com/i/2ey09anydalwx4jo89nk.png" alt="custom_success" /></p> <p>You can have a custom function in your code that lets you use “your own” log with colors directly</p> <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">customLog</span><span class="p">(</span><span class="nx">message</span><span class="p">,</span> <span class="nx">color</span><span class="o">=</span><span class="s1">'black'</span><span class="p">)</span> <span class="p">{</span>
+     <span class="k">switch</span> <span class="p">(</span><span class="nx">color</span><span class="p">)</span> <span class="p">{</span>
+         <span class="k">case</span> <span class="s1">'success'</span><span class="p">:</span>  
+              <span class="nx">color</span> <span class="o">=</span> <span class="s1">'Green'</span>
+              <span class="k">break</span>
+         <span class="k">case</span> <span class="s1">'info'</span><span class="p">:</span>     
+                 <span class="nx">color</span> <span class="o">=</span> <span class="s1">'Blue'</span>  
+              <span class="k">break</span><span class="p">;</span>
+         <span class="k">case</span> <span class="s1">'error'</span><span class="p">:</span>   
+              <span class="nx">color</span> <span class="o">=</span> <span class="s1">'Red'</span>   
+              <span class="k">break</span><span class="p">;</span>
+         <span class="k">case</span> <span class="s1">'warning'</span><span class="p">:</span>  
+              <span class="nx">color</span> <span class="o">=</span> <span class="s1">'Orange'</span> 
+              <span class="k">break</span><span class="p">;</span>
+         <span class="nl">default</span><span class="p">:</span> 
+              <span class="nx">color</span> <span class="o">=</span> <span class="nx">color</span>
+     <span class="p">}</span>
+
+     <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`%c</span><span class="p">${</span><span class="nx">message</span><span class="p">}</span><span class="s2">`</span><span class="p">,</span> <span class="s2">`color:</span><span class="p">${</span><span class="nx">color</span><span class="p">}</span><span class="s2">`</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="nx">customLog</span><span class="p">(</span><span class="s1">'Hello World!'</span><span class="p">)</span>
+<span class="nx">customLog</span><span class="p">(</span><span class="s1">'Success!'</span><span class="p">,</span> <span class="s1">'success'</span><span class="p">)</span>
+<span class="nx">customLog</span><span class="p">(</span><span class="s1">'Error!'</span><span class="p">,</span> <span class="s1">'error'</span><span class="p">)</span>
+<span class="nx">customLog</span><span class="p">(</span><span class="s1">'Warning!'</span><span class="p">,</span> <span class="s1">'warning'</span><span class="p">)</span>
+<span class="nx">customLog</span><span class="p">(</span><span class="s1">'Info...'</span><span class="p">,</span> <span class="s1">'info'</span><span class="p">)</span>
+</code></pre></div></div> <p><img src="https://thepracticaldev.s3.amazonaws.com/i/utfaa6x2ryx37z9540nn.png" alt="custom_function" /></p> <p>Here’s the <a href="https://codepen.io/wang0nya/pen/PyRJmO">pen</a>.</p> <p>Hope you found this useful and happy debugging! 😊</p> </article> <div class="page-navigation code"> <a class="home" href="http://localhost:4000/" title="Back to Index">Index</a> <span> &middot; </span> <a class="prev" href="http://localhost:4000/dart-convert" title="PREV: How you turn a string into a number (or vice versa) with Dart">&gt;&gt;</a> </div> </div> <div class="footer"> <span class="block">&copy; 2018 Kinyanjui Wangonya</span> </div> </body> </html>
