@@ -3,7 +3,7 @@
   <channel>
     <title>Kinyanjui Wangonya</title>
     <description>Kinyanjui Wangonya ia a javascript coder, web, and mobile app developer. Here's his blog and portfolio</description>
-    <link>https://wang0nya.github.io</link>
+    <link>http://localhost:4000</link>
     
       
         <item>
@@ -93,8 +93,8 @@
 &lt;p&gt;Hope you found this useful and happy debugging! 😊&lt;/p&gt;
 </description>
           <pubDate>2018-10-18T00:00:00+03:00</pubDate>
-          <link>https://wang0nya.github.io/better-console</link>
-          <guid isPermaLink="true">https://wang0nya.github.io/better-console</guid>
+          <link>http://localhost:4000/better-console</link>
+          <guid isPermaLink="true">http://localhost:4000/better-console</guid>
         </item>
       
     
@@ -151,8 +151,8 @@
 &lt;p&gt;I’ve been wanting to take up mobile app development with flutter so I thought I’d get comfortable with dart first before diving into flutter. So far, I’m happy. Coming from Javascript, Dart is easy to pick up, and fun to learn.&lt;/p&gt;
 </description>
           <pubDate>2018-10-04T00:00:00+03:00</pubDate>
-          <link>https://wang0nya.github.io/dart-convert</link>
-          <guid isPermaLink="true">https://wang0nya.github.io/dart-convert</guid>
+          <link>http://localhost:4000/dart-convert</link>
+          <guid isPermaLink="true">http://localhost:4000/dart-convert</guid>
         </item>
       
     
@@ -196,8 +196,8 @@
 &lt;p&gt;Innovate when you know you have a better idea, but take advantage of conventions when you don’t.&lt;/p&gt;
 </description>
           <pubDate>2018-09-12T00:00:00+03:00</pubDate>
-          <link>https://wang0nya.github.io/web-conventions</link>
-          <guid isPermaLink="true">https://wang0nya.github.io/web-conventions</guid>
+          <link>http://localhost:4000/web-conventions</link>
+          <guid isPermaLink="true">http://localhost:4000/web-conventions</guid>
         </item>
       
     
@@ -231,8 +231,8 @@
 &lt;/ul&gt;
 </description>
           <pubDate>2018-09-10T00:00:00+03:00</pubDate>
-          <link>https://wang0nya.github.io/how-we-use-web</link>
-          <guid isPermaLink="true">https://wang0nya.github.io/how-we-use-web</guid>
+          <link>http://localhost:4000/how-we-use-web</link>
+          <guid isPermaLink="true">http://localhost:4000/how-we-use-web</guid>
         </item>
       
     
@@ -289,8 +289,8 @@
 &lt;/ul&gt;
 </description>
           <pubDate>2018-09-09T00:00:00+03:00</pubDate>
-          <link>https://wang0nya.github.io/first-law-of-usability</link>
-          <guid isPermaLink="true">https://wang0nya.github.io/first-law-of-usability</guid>
+          <link>http://localhost:4000/first-law-of-usability</link>
+          <guid isPermaLink="true">http://localhost:4000/first-law-of-usability</guid>
         </item>
       
     
@@ -358,8 +358,8 @@ Let’s see an example:&lt;/p&gt;
 &lt;p&gt;There you have it 😄. Regex might be a bit hard to master, but once you do, you’ll find that it makes working with strings so much easier.&lt;/p&gt;
 </description>
           <pubDate>2018-08-30T00:00:00+03:00</pubDate>
-          <link>https://wang0nya.github.io/lookaheads-lookbehinds</link>
-          <guid isPermaLink="true">https://wang0nya.github.io/lookaheads-lookbehinds</guid>
+          <link>http://localhost:4000/lookaheads-lookbehinds</link>
+          <guid isPermaLink="true">http://localhost:4000/lookaheads-lookbehinds</guid>
         </item>
       
     
@@ -397,8 +397,8 @@ Let’s see an example:&lt;/p&gt;
 &lt;p&gt;These two methods can come in handy if you need to perform somewhat similar tasks as described above. But of course, they’re not the only way.&lt;/p&gt;
 </description>
           <pubDate>2018-08-28T00:00:00+03:00</pubDate>
-          <link>https://wang0nya.github.io/array-iteration</link>
-          <guid isPermaLink="true">https://wang0nya.github.io/array-iteration</guid>
+          <link>http://localhost:4000/array-iteration</link>
+          <guid isPermaLink="true">http://localhost:4000/array-iteration</guid>
         </item>
       
     
@@ -473,8 +473,8 @@ Let’s see an example:&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
           <pubDate>2018-08-27T00:00:00+03:00</pubDate>
-          <link>https://wang0nya.github.io/finding-elements</link>
-          <guid isPermaLink="true">https://wang0nya.github.io/finding-elements</guid>
+          <link>http://localhost:4000/finding-elements</link>
+          <guid isPermaLink="true">http://localhost:4000/finding-elements</guid>
         </item>
       
     
@@ -551,8 +551,8 @@ Let’s see an example:&lt;/p&gt;
 &lt;p&gt;So, as cool and popular as arrow functions may be, its best to understand how they work, and to know when to and not to use them.&lt;/p&gt;
 </description>
           <pubDate>2018-08-26T00:00:00+03:00</pubDate>
-          <link>https://wang0nya.github.io/this-arrow-functions</link>
-          <guid isPermaLink="true">https://wang0nya.github.io/this-arrow-functions</guid>
+          <link>http://localhost:4000/this-arrow-functions</link>
+          <guid isPermaLink="true">http://localhost:4000/this-arrow-functions</guid>
         </item>
       
     
