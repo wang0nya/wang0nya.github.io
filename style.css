@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,900");
+html {
+    font-size: 70.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: #444;
+    font-size: 1.6rem;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.Title {
+    font-size: 50px;
+    font-size: 8vw;
+    color: #111;
+    font-weight: 900;
+    line-height: 1.1;
+    text-transform: uppercase;
+    display: inline-block;
+}
+@media (max-width: 525px) {
+    .Title {
+        font-size: 35px;
+    }
+}
+@media (min-width: 937.5px) {
+    .Title {
+        font-size: 55px;
+    }
+}
+
+.Title-sub {
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-size: 0.34em;
+    letter-spacing: 0.16em;
+    font-weight: 400;
+    text-transform: none;
+    display: block;
+    margin-top: 1.2rem;
+    padding-top: 1.6rem;
+    border-top: 0.45em solid;
+}
+
+.u-shadow {
+    text-shadow: 4px 4px 0 #6fd1bd;
+    transition: text-shadow 0.2s ease-in-out;
+}
+
+.Title:hover .u-shadow {
+    text-shadow: -4px -4px 0 salmon;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*menu*/
+.menu a {
+    display: block;
+    text-decoration: none;
+    font-weight: 400;
+    color: black;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-size: 1.1em;
+    letter-spacing: 0.16em;
+}
+.menu a span {
+    background-image: linear-gradient(to bottom, white 70%, transparent 70%), linear-gradient(to right, salmon 33%, #84A8C1 33%, #9BCCB9 66%, #6fd1bd 66%);
+    background-size: 306% 100%;
+    background-position: 100% 0;
+    transition: 1s background-position;
+}
+
+.menu a:hover span {
+    background-position: 0%;
+}
+
