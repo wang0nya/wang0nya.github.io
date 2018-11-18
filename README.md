@@ -1,2 +1,0 @@
-# Kinyanjui Wangonya
-my site
