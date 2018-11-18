@@ -1,0 +1,106 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1" /> <title>Sorting Algorithms with Javascript (Part 2) · Kinyanjui Wangonya</title> <meta name="description" content="As promised, here’s the second part of the post. You can read the first part here."> <link rel="icon" href="http://localhost:4000/assets/favicon.png"> <link rel="apple-touch-icon" href="http://localhost:4000/assets/touch-icon.png"> <link rel="stylesheet" href="http://localhost:4000/assets/core.css"> <link rel="canonical" href="http://localhost:4000/2018/11/02/js-sorting-2.html"> <link rel="alternate" type="application/atom+xml" title="Kinyanjui Wangonya" href="http://localhost:4000/feed.xml" /> </head> <body> <aside class="logo"> <a href="http://localhost:4000/"> <img src="/assets/me.jpg" class="logo-avatar" alt="logo"> </a> <span class="logo-prompt code">Back home</span> </aside> <div id="content"> <article> <div class="center"> <h1 class="title">Sorting Algorithms with Javascript (Part 2)</h1> <time class="code">November 2, 2018</time> </div> <div class="divider"></div> <p>As promised, here’s the second part of the post. You can read the first part <a href="https://wang0nya.github.io/js-sorting-1">here</a>.</p> <p>I’m going to show Javascript implementations of three more sorting algorithms:</p> <ul> <li>Quick sort</li> <li>Heap sort</li> <li>Counting sort</li> </ul> <p>Again, this is not intended to be an in-depth explanation on the ins and outs of how the algorithms work and their performance. If you’d rather read about that, here’s a nice resource I found: <a href="https://brilliant.org/wiki/sorting-algorithms/">Sorting Algorithms</a></p> <p>To keep things simple, I’ll be sorting a simple list <code class="highlighter-rouge">list</code> having only 5 elements <code class="highlighter-rouge">[4, 2, 3, 1, 5]</code>.</p> <h2 id="quick-sort">Quick Sort</h2> <p>Like merge sort, this algorithm takes a divide-and-conquer approach. It works by picking a pivot and dividing the list in relation to that pivot: all elements greater than the pivot go to the right of the pivot, and all elements less than or equal to the pivot go to the left of the pivot. Elements on both sides are quick sorted, and this is repeated until the complete list is sorted.</p> <h4 id="visual">Visual</h4> <p>The visual on this wasn’t very clear in illustrating how the algorithm actually works so <a href="https://www.youtube.com/watch?v=PgBzjlCcFvc">here’s a video</a> instead.</p> <h4 id="code">Code</h4> <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">quickSort</span><span class="p">(</span><span class="nx">list</span><span class="p">)</span> <span class="p">{</span>
+	<span class="k">if</span> <span class="p">(</span><span class="nx">list</span><span class="p">.</span><span class="nx">length</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span> 
+		<span class="k">return</span> <span class="nx">list</span>
+	<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+		<span class="kd">const</span> <span class="nx">left</span> <span class="o">=</span> <span class="p">[]</span>
+		<span class="kd">const</span> <span class="nx">right</span> <span class="o">=</span> <span class="p">[]</span>
+		<span class="kd">const</span> <span class="nx">sorted</span> <span class="o">=</span> <span class="p">[]</span>
+		<span class="kd">const</span> <span class="nx">pivot</span> <span class="o">=</span> <span class="nx">list</span><span class="p">.</span><span class="nx">pop</span><span class="p">()</span> <span class="c1">// we're picking the last item to act as the pivot</span>
+		<span class="kd">const</span> <span class="nx">length</span> <span class="o">=</span> <span class="nx">list</span><span class="p">.</span><span class="nx">length</span>
+
+		<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+			<span class="k">if</span> <span class="p">(</span><span class="nx">list</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="nx">pivot</span><span class="p">)</span> <span class="p">{</span>
+				<span class="nx">left</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">list</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span>
+			<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+				<span class="nx">right</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">list</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span>
+			<span class="p">}</span>
+		<span class="p">}</span>
+
+		<span class="k">return</span> <span class="nx">sorted</span><span class="p">.</span><span class="nx">concat</span><span class="p">(</span><span class="nx">quickSort</span><span class="p">(</span><span class="nx">left</span><span class="p">),</span> <span class="nx">pivot</span><span class="p">,</span> <span class="nx">quickSort</span><span class="p">(</span><span class="nx">right</span><span class="p">))</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+
+<span class="kd">const</span> <span class="nx">sorted</span> <span class="o">=</span> <span class="nx">quickSort</span><span class="p">(</span><span class="nx">list</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sorted</span><span class="p">)</span>
+</code></pre></div></div> <h2 id="heap-sort">Heap Sort</h2> <p>This algorithm takes advantage of a data structure known as a <a href="https://www.cs.cmu.edu/~adamchik/15-121/lectures/Binary%20Heaps/heaps.html">binary-heap</a>. Heap sort works by creating a Max heap to sort the elements in ascending order, then swapping the root node with the last node, and deleting the sorted node from the heap every time this is done.</p> <h4 id="visual-1">Visual</h4> <p><img src="https://thepracticaldev.s3.amazonaws.com/i/36sw7hiikhyv1mrwmz4g.gif" alt="heap-sort" /></p> <h4 id="code-1">Code</h4> <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// create max heap</span>
+<span class="kd">function</span> <span class="nx">maxHeap</span><span class="p">(</span><span class="nx">input</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">left</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="nx">i</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="kd">const</span> <span class="nx">right</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="nx">i</span> <span class="o">+</span> <span class="mi">2</span>
+    <span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">i</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="nx">left</span> <span class="o">&lt;</span> <span class="nx">arrLength</span> <span class="o">&amp;&amp;</span> <span class="nx">input</span><span class="p">[</span><span class="nx">left</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nx">input</span><span class="p">[</span><span class="nx">max</span><span class="p">])</span> <span class="p">{</span>
+        <span class="nx">max</span> <span class="o">=</span> <span class="nx">left</span>
+    <span class="p">}</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="nx">right</span> <span class="o">&lt;</span> <span class="nx">arrLength</span> <span class="o">&amp;&amp;</span> <span class="nx">input</span><span class="p">[</span><span class="nx">right</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nx">input</span><span class="p">[</span><span class="nx">max</span><span class="p">])</span>     <span class="p">{</span>
+        <span class="nx">max</span> <span class="o">=</span> <span class="nx">right</span>
+    <span class="p">}</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="nx">max</span> <span class="o">!=</span> <span class="nx">i</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">swap</span><span class="p">(</span><span class="nx">input</span><span class="p">,</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">max</span><span class="p">)</span>
+        <span class="nx">maxHeap</span><span class="p">(</span><span class="nx">input</span><span class="p">,</span> <span class="nx">max</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">swap</span><span class="p">(</span><span class="nx">input</span><span class="p">,</span> <span class="nx">indexA</span><span class="p">,</span> <span class="nx">indexB</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">temp</span> <span class="o">=</span> <span class="nx">input</span><span class="p">[</span><span class="nx">indexA</span><span class="p">]</span>
+
+    <span class="nx">input</span><span class="p">[</span><span class="nx">indexA</span><span class="p">]</span> <span class="o">=</span> <span class="nx">input</span><span class="p">[</span><span class="nx">indexB</span><span class="p">]</span>
+    <span class="nx">input</span><span class="p">[</span><span class="nx">indexB</span><span class="p">]</span> <span class="o">=</span> <span class="nx">temp</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">heapSort</span><span class="p">(</span><span class="nx">input</span><span class="p">)</span> <span class="p">{</span>   
+    <span class="nx">arrLength</span> <span class="o">=</span> <span class="nx">input</span><span class="p">.</span><span class="nx">length</span>
+
+    <span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">arrLength</span> <span class="o">/</span> <span class="mi">2</span><span class="p">);</span> <span class="nx">i</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">-=</span> <span class="mi">1</span><span class="p">)</span>      <span class="p">{</span>
+        <span class="nx">maxHeap</span><span class="p">(</span><span class="nx">input</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span>
+      <span class="p">}</span>
+
+    <span class="k">for</span> <span class="p">(</span><span class="nx">i</span> <span class="o">=</span> <span class="nx">input</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">--</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">swap</span><span class="p">(</span><span class="nx">input</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span>
+        <span class="nx">arrLength</span><span class="o">--</span>
+
+        <span class="nx">maxHeap</span><span class="p">(</span><span class="nx">input</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="p">}</span>
+    <span class="k">return</span>
+<span class="p">}</span>
+
+<span class="kd">let</span> <span class="nx">arrLength</span>
+
+<span class="kd">const</span> <span class="nx">list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+
+<span class="kd">const</span> <span class="nx">sorted</span> <span class="o">=</span> <span class="nx">heapSort</span><span class="p">(</span><span class="nx">list</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">list</span><span class="p">)</span>
+</code></pre></div></div> <h2 id="counting-sort">Counting Sort</h2> <p>You’ll find counting sort to be rather unique compared to the algorithms we’ve covered so far. This is because it does not compare elements while sorting. It works based on numeric keys. It does this by creating a counting array, then using it to determine an element’s correct position.</p> <h4 id="visual-2">Visual</h4> <p><img src="https://thepracticaldev.s3.amazonaws.com/i/w4jk13diiokecdhny33z.gif" alt="counting-sort" /></p> <h4 id="code-2">Code</h4> <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">countingSort</span><span class="p">(</span><span class="nx">list</span><span class="p">,</span> <span class="nx">min</span><span class="p">,</span> <span class="nx">max</span><span class="p">)</span>
+  <span class="p">{</span>
+      <span class="kd">let</span> <span class="nx">i</span>
+      <span class="kd">let</span> <span class="nx">z</span> <span class="o">=</span> <span class="mi">0</span>
+      <span class="kd">const</span> <span class="nx">count</span> <span class="o">=</span> <span class="p">[]</span>
+
+      <span class="k">for</span> <span class="p">(</span><span class="nx">i</span> <span class="o">=</span> <span class="nx">min</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;=</span> <span class="nx">max</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+          <span class="nx">count</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+      <span class="p">}</span>
+
+      <span class="k">for</span> <span class="p">(</span><span class="nx">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">list</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+          <span class="nx">count</span><span class="p">[</span><span class="nx">list</span><span class="p">[</span><span class="nx">i</span><span class="p">]]</span><span class="o">++</span>
+      <span class="p">}</span>
+
+      <span class="k">for</span> <span class="p">(</span><span class="nx">i</span> <span class="o">=</span> <span class="nx">min</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;=</span> <span class="nx">max</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+          <span class="k">while</span> <span class="p">(</span><span class="nx">count</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span><span class="o">--</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+              <span class="nx">list</span><span class="p">[</span><span class="nx">z</span><span class="o">++</span><span class="p">]</span> <span class="o">=</span> <span class="nx">i</span>
+          <span class="p">}</span>
+      <span class="p">}</span>
+      <span class="k">return</span> <span class="nx">list</span>
+  <span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="kd">const</span> <span class="nx">min</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">min</span><span class="p">(...</span><span class="nx">list</span><span class="p">)</span>
+<span class="kd">const</span> <span class="nx">max</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">max</span><span class="p">(...</span><span class="nx">list</span><span class="p">)</span>
+<span class="kd">const</span> <span class="nx">sorted</span> <span class="o">=</span> <span class="nx">countingSort</span><span class="p">(</span><span class="nx">list</span><span class="p">,</span> <span class="nx">min</span><span class="p">,</span> <span class="nx">max</span><span class="p">)</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sorted</span><span class="p">)</span>
+</code></pre></div></div> <p>Happy coding!</p> <p><img src="https://media.giphy.com/media/K3raI0cXTkzNC/giphy.gif" alt="happy" /></p> </article> <div class="page-navigation code"> <a class="home" href="http://localhost:4000/" title="Back to Index">Index</a> <span> &middot; </span> <a class="prev" href="http://localhost:4000/2018/10/30/js-sorting-1.html" title="PREV: Sorting Algorithms with Javascript (Part 1)">&gt;&gt;</a> </div> </div> <div class="footer"> <span class="block">&copy; 2018 Kinyanjui Wangonya</span> </div> <script> console.log('%c%s', 'color: green; background: yellow; font-size: 25px;',"¯\\_(ツ)_/¯"); </script> </body> </html>
